@@ -10,7 +10,6 @@ package com.truex.api
 	{
 		static private var _apiInstance:*;
 
-		private var _layoutProxy:TxLayoutProxy;
 		private var _tracker:TxTracker;
 		
 		private var _currentStep:int;
@@ -27,7 +26,6 @@ package com.truex.api
 				} catch (e:Error) { }
 			}
 			
-			_layoutProxy = new TxLayoutProxy();
 			_tracker = new TxTracker(_apiInstance);
 			
 			if (engagement && engagement.stage != null && engagement.parent == engagement.stage) {
@@ -101,7 +99,6 @@ package com.truex.api
 		}
 		
 		public function get params():* { return (_apiInstance is TxProxy ? {} : _apiInstance.params); }
-		public function get layout():TxLayoutProxy { return _layoutProxy; }
 		public function get track():TxTracker { return _tracker; }
 		
 		public function set preloadHandler(handler:Function):void {
