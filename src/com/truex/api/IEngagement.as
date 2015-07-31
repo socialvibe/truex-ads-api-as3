@@ -7,6 +7,6 @@ package com.truex.api
 		
 		function onEngagementPause():void;
 		function onEngagementResume():void;
-		function onEngagementVolumeChange():void;
+		function onEngagementVolumeChange(value:Number):void;
 	}
 }

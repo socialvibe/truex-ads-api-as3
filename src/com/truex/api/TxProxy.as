@@ -99,6 +99,9 @@ package com.truex.api
 		}
 		
 		public function get params():* { return (_apiInstance is TxProxy ? {} : _apiInstance.params); }
+		public function getParams(name:*):* { return proxyCall(arguments.callee, arguments, this, {}); }
+		public function setParams(name:*, value:*):void { proxyCall(arguments.callee, arguments, this); }
+		
 		public function get track():TxTracker { return _tracker; }
 		
 		public function set preloadHandler(handler:Function):void {

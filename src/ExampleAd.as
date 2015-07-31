@@ -44,7 +44,7 @@ package
 		}
 		
 		// user wishes to change volume, please adjust the volume on any running videos or sounds
-		public function onEngagementVolumeChange():void
+		public function onEngagementVolumeChange(value:Number):void
 		{
 			// adjust volume on videos or sounds
 		}

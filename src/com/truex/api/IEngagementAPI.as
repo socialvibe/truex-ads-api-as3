@@ -7,6 +7,8 @@ package com.truex.api
 		 *
 		 **/
 		function get params():*;
+		function getParams(name:*):*;
+		function setParams(name:*, value:*):void;
 		
 		
 		/* =================================
