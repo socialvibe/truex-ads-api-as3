@@ -182,11 +182,11 @@ var commentData:Array = _api.getRecentComments();
 
 Submitting email, name, and zipcode data:
 ```as3
-_api.submitEmail(/* email */);
+_api.track.submitEmail(/* email */);
 
-_api.submitName(/* name */);
+_api.track.submitName(/* name */);
 
-_api.submitZipcode(/* zipcode */);
+_api.track.submitZipcode(/* zipcode */);
 
 ```
 
