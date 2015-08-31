@@ -117,7 +117,7 @@ package com.truex.api
 			if (_apiInstance is TxProxy)
 				_currentStep = index;
 			else
-				_apiInstance.currentStep(index);
+				_apiInstance.setCurrentStep(index);
 		}
 		public function set totalStepCount(count:int):void {
 			if (!(_apiInstance is TxProxy))
