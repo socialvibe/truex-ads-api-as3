@@ -118,9 +118,11 @@ _api.track.gameReplay(/* label */);
 #### Websites & Social Sharing
 The following API calls should be used for clicking out to websites and sharing to social networks.
 
-Opens an external browser window from the engagement.  In most cases each engagement has only one click out so no need to pass in a URL (its entered dynamically in our admin).  If a specific URL is specified, you can pass the URL as the first arugment.
+Opens an external browser window from the engagement.  In most cases each engagement has only one click out so no need to pass in a URL (its entered dynamically in our tag manager admin).  If there are multiple click outs, you can pass in a tag manager `label` to reference a specific tag.  Lastly, a URL can be passed in as the first argument to click out to a specific URL.
 ```as3
 _api.popupWebsite();
+
+_api.popupWebsite(/* tag manager label */);
 
 _api.popupWebsite(/* url */);
 ```
